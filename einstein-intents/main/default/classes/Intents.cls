@@ -1,5 +1,5 @@
-public class EinsteinIntents {
-    public Intent[] intents;
+public class Intents {
+    public Intent[] probabilities;
     public class Intent {
         public Decimal probability;
         public String label;

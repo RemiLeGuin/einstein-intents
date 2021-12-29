@@ -22,8 +22,8 @@ public with sharing class IntentTypeClassification implements Queueable, Databas
         //request.setEndpoint('callout:EinsteinPlatform/v2/language/intent');
         request.setEndpoint('https://api.einstein.ai/v2/language/intent');
 
-        ContentVersion base64Content = [SELECT VersionData FROM ContentVersion WHERE Title = 'einstein_platform' LIMIT 1];
-        String keyContents = base64Content.VersionData.tostring();
+        StaticResource base64Content = [SELECT Body FROM StaticResource WHERE Name = 'einstein_platform' LIMIT 1];
+        String keyContents = base64Content.Body.tostring();
         keyContents = keyContents.replace('-----BEGIN RSA PRIVATE KEY-----', '');
         keyContents = keyContents.replace('-----END RSA PRIVATE KEY-----', '');
         keyContents = keyContents.replace('\n', '');
@@ -53,8 +53,8 @@ public with sharing class IntentTypeClassification implements Queueable, Databas
     }
 
     private String getCaseTypeFromIntents(String serializedIntents) {
-        EinsteinIntents einsteinIntents = (EinsteinIntents) JSON.deserialize(serializedIntents, EinsteinIntents.class);
-        return einsteinIntents.intents[0]?.label;
+        Intents intents = (Intents) JSON.deserialize(serializedIntents, Intents.class);
+        return intents.probabilities[0]?.label;
     }
 
 }
