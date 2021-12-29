@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>EinsteinIntents</members>
+        <members>EinsteinKeyManagement</members>
+        <members>EinsteinKeys</members>
+        <members>IntentTypeClassification</members>
+        <members>JWT</members>
+        <members>JWTBearerFlow</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>CaseAfterInsert</members>
+        <name>ApexTrigger</name>
+    </types>
+    <types>
+        <members>einstein_platform</members>
+        <name>Certificate</name>
+    </types>
+    <types>
+        <members>EinsteinPlatform</members>
+        <name>NamedCredential</name>
+    </types>
+    <version>53.0</version>
+</Package>

@@ -1,0 +1,15 @@
+{
+  "name": "einsteinintent",
+  "version": "1.0.0",
+  "description": "Install the AppExchange: Einstein Vision and Language Model Builder https://appexchange.salesforce.com/appxListingDetail?listingId=a0N3A00000Ed1V8UAJ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "2.5.1",
+    "prettier-plugin-apex": "1.10.0"
+  }
+}
