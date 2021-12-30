@@ -1,4 +1,4 @@
-# Einstein Intent
+# Einstein Intents
 
 Proof of Concept to use the Einstein Intents API to qualify cases coming from emails based on their description (the body of the email message).
 
@@ -10,9 +10,7 @@ Install the unlocked package by clicking one of the following URLs:
 ## Test:
 Try to create a case with an 'Email' origin and the following description:
 
-> Hello,
-> I would like to change to change my name from John to Jane.
-> Best regards
+> Hello, I would like to change to change my name from John to Jane. Best regards
 
 Wait for the Apex job to finish and refresh the case page. The 'Type' field will be updated with the 'Name change' value.
 Salesforce interrogated the Einstein API which analyzed the case description. It determined that the case is about a change of name based on a dataset of previous similar requests.
@@ -26,5 +24,5 @@ Follow these configuration steps:
 
 More documentation in the [metamind.io](https://metamind.readme.io/docs/intro-to-einstein-language "Introduction to Salesforce Einstein Language") website.
 
-## Improvements
+## Improvements:
 It would be better to use a named credential to authenticate with the JWT method to the Einstein API. I tried (the configuration remains in the repository) but I cannot upload the Einstein certificate in the Salesforce 'Certificate and Key Management' setup menu. As the Einstein platform just gives a PEM private key, it is not accepted as a valid JKS (Java Keystore) once converted.
