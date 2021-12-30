@@ -26,3 +26,4 @@ More documentation in the [metamind.io](https://metamind.readme.io/docs/intro-to
 
 ## Improvements:
 It would be better to use a named credential to authenticate with the JWT method to the Einstein API. I tried (the configuration remains in the repository) but I cannot upload the Einstein certificate in the Salesforce 'Certificate and Key Management' setup menu. As the Einstein platform just gives a PEM private key, it is not accepted as a valid JKS (Java Keystore) once converted.
+I did not coded the test classes to cover the Apex code.
