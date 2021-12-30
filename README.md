@@ -1,6 +1,6 @@
 # Einstein Intents
 
-Proof of Concept to use the Einstein Intents API to qualify cases coming from emails based on their description (the body of the email message).
+Proof of Concept using the Einstein Intents API to qualify cases coming from emails based on their description (the body of the email message).
 
 ## Installation:
 Install the unlocked package by clicking one of the following URLs:
